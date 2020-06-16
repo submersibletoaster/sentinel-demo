@@ -1,16 +1,14 @@
 terraform {
   backend "remote" {
-    organization = "hashicorp-rachel"
+    organization = "bramble"
     workspaces {
-      name = "sentinel-demo1"
+      name = "sentinel-demo"
     }
   }
 }
 
 provider "aws" {
-  region                  = "us-west-2"
-  profile                 = "default"
-  shared_credentials_file = "~/.aws/credentials"
+  region                  = "ap-southeast-2"
 }
 
 
